@@ -3,8 +3,8 @@
     <Header>
     </Header>
     <Packages />
-    <ButtonAddPackage @clickButton="showAddPackage = true" />
-    <AddPackage v-if="showAddPackage" @hideAddPackage="showAddPackage = false" />
+    <ButtonAddPackage @click-button="showAddPackage = true" />
+    <AddPackage v-if="showAddPackage" @hide-add-package="showAddPackage = false" />
   </v-app>
 </template>
 

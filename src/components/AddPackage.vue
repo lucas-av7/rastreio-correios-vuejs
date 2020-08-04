@@ -17,7 +17,7 @@
         <v-btn
           tile color="white"
           class="mr-2 blue--text"
-          @click="$emit('hideAddPackage')">Cancelar
+          @click="$emit('hide-add-package')">Cancelar
         </v-btn>
         <v-btn tile color="primary">Salvar</v-btn>
       </v-card>
