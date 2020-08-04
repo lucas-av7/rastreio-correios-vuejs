@@ -1,5 +1,5 @@
 <template>
-  <v-card flat tile class="pa-2 mb-2">
+  <v-card flat tile class="pa-2">
     <h3>{{ item.title }}</h3>
     <h4 class="green--text">item status nulo</h4>
     <p>{{ item.id }}</p>
