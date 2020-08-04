@@ -1,6 +1,6 @@
 <template>
   <v-card flat class="packages px-5">
-    <Package />
+    <Package v-for="item in packages" :key="item.id" :item="item" />
   </v-card>
 </template>
 
@@ -9,7 +9,12 @@ import Package from './Package'
 
 export default {
   name: 'Packages',
-  components: { Package }
+  components: { Package },
+  computed: {
+    packages() {
+      return this.$store.getters.getPackages
+    }
+  }
 }
 </script>
 
