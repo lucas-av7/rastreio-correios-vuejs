@@ -11,11 +11,17 @@
     <v-btn icon>
       <v-icon color="white">mdi-chevron-down</v-icon>
     </v-btn>
+
+    <template v-slot:extension>
+      <TabMenu />
+    </template>
   </v-app-bar>
 </template>
 
 <script>
+import TabMenu from './TabMenu'
 export default {
-  name: 'Header'
+  name: 'Header',
+  components: { TabMenu }
 }
 </script>
