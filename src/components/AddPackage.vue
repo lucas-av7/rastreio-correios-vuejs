@@ -5,7 +5,7 @@
       </v-card>
       <v-card tile color="white" class="ma-auto pa-3" width="344" height="150">
         <v-text-field
-          light color="red" label="Título da encomenda"
+          light label="Título da encomenda"
           hide-details="auto" :rules="titleRules">
         </v-text-field>
         <v-text-field
