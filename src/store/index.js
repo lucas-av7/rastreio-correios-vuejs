@@ -8,8 +8,14 @@ export default new Vuex.Store({
     packages: []
   },
   mutations: {
+    addPackage(state, payload) {
+      state.packages.unshift(payload)
+    }
   },
   actions: {
+    addPackage({ commit }, payload) {
+      commit('addPackage', payload)
+    }
   },
   getters: {
     getPackages(state) {
